@@ -1,4 +1,4 @@
-# Bài toán ứng dụng: Cài đặt và So sánh Rasterization vs. Ray Tracing trong C++
+# Bài toán ứng dụng: Cài đặt và So sánh Rasterization vs. Ray Tracing trong thực tế
 
 ## 1. Giới thiệu và Mục tiêu
 
@@ -38,11 +38,15 @@ Mã nguồn được tổ chức một cách logic thành 4 phần chính để 
 * Hàm `simple_lighting()` triển khai mô hình **chiếu sáng cục bộ (Local Illumination)**[cite: 146]. [cite_start]Nó chỉ tính toán ánh sáng dựa trên vị trí điểm va chạm, pháp tuyến bề mặt và hướng tới một nguồn sáng duy nhất.
 * Mô hình này **không có khả năng tạo bóng đổ hoặc phản chiếu** vì nó không nhận biết được sự tồn tại của các vật thể khác trong cảnh và không mô phỏng sự nảy bật của tia sáng.
 
-## 4. Kết luận Phân tích
+## 4. Kết luận 
 
 Chương trình đã cài đặt thành công một bài toán ứng dụng cho phép so sánh trực tiếp hai mô hình đồ họa.
 
 * **Rasterization** được minh họa là một phương pháp cục bộ, chỉ có khả năng tính toán ánh sáng trực tiếp, dẫn đến hình ảnh "phẳng" và thiếu các hiệu ứng vật lý quan trọng.
 * **Ray Tracing (Path Tracing)** được minh họa là một phương pháp mô phỏng vật lý toàn diện.Bằng cách mô phỏng đường đi và sự nảy bật của ánh sáng, nó tự động tạo ra các hiệu ứng phức tạp như bóng đổ mềm, phản chiếu chính xác, và chiếu sáng gián tiếp, mang lại kết quả chân thực hơn nhiều.
 
-Dù đơn giản, chương trình này đã minh họa rõ ràng lý do tại sao Ray Tracing được xem là tương lai của đồ họa máy tính hiện thực.
+ ![alt text](image-1.png)                                                                                  
+- Hình 1: Sử dụng RayTracing                                                                                    
+
+![alt text](image.png)
+- Hình 2: Không sử dụng RayTracing
