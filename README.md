@@ -1,4 +1,4 @@
-# Báo cáo Phân tích: Cài đặt và So sánh Rasterization vs. Ray Tracing trong C++
+# Bài toán ứng dụng: Cài đặt và So sánh Rasterization vs. Ray Tracing trong C++
 
 ## 1. Giới thiệu và Mục tiêu
 
